@@ -1,0 +1,97 @@
+.skillsSection {
+  width: 100%;
+  padding: 50px 24px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.1;
+    z-index: 0;
+  }
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  h5{
+    font-family: "Poppins", sans-serif;
+  }
+
+  
+}
+
+.title span {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffc107;
+}
+
+.skillsImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.skillsImage {
+    align-items: center;
+    border: 0 solid #fff;
+    color: #fff;
+    display: flex;
+    flex: 0 0 15%;
+    font-weight: 500;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.logo {
+    display: block;
+    max-width: 40px;
+    margin-right: 15px;
+  object-fit: contain;
+}
+
+.label {
+  font-size: 0.875rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.core{
+    .label {
+        font-size: 0.875rem !important;
+        font-weight: 700;
+    }
+    .skillsImage{
+        flex: 0 0 20% !important;
+    }
+    .logo{
+        max-width: 50px !important;
+    }
+}
+
+.frontend{
+    .label {
+        font-size: 0.875rem !important;
+        font-weight: 700;
+    }
+    .skillsImage{
+        flex: 0 0 33.333% !important;
+    }
+    .logo{
+        max-width: 50px !important;
+    }
+}

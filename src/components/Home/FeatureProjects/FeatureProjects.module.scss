@@ -1,0 +1,135 @@
+.featureProjectSection {
+  padding: 120px 24px;
+  background: #0b0d17;
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.1;
+    z-index: 0;
+  }
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffc107;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.description {
+  margin: 16px 0 0;
+  max-width: 640px;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: #999;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card {
+  padding: 28px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 16px 40px rgba(17, 17, 17, 0.04);
+  transition:
+  transform 0.2s ease,
+  box-shadow 0.2s ease,
+  border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 50px rgba(17, 17, 17, 0.08);
+    border-color: rgba(17, 17, 17, 0.12);
+  }
+}
+
+.cardHeader {
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.cardSubtitle {
+  margin: 8px 0 0;
+  color: #ffc107;
+  font-size: 0.95rem;
+}
+
+.cardDescription {
+  margin: 0;
+  color: #999;
+  line-height: 1.75;
+}
+
+.metaBlock {
+  padding-top: 18px;
+  border-top: 1px solid rgba(17, 17, 17, 0.08);
+  display: grid;
+  gap: 10px;
+}
+
+.metaItem {
+  margin: 0;
+  color: #fff;
+  font-size: 0.825rem;
+  line-height: 1.6;
+
+  span {
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 88px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

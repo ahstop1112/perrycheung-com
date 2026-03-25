@@ -1,0 +1,97 @@
+.mobileMenu {
+  position: relative;
+  z-index: 100;
+  display: block;
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.scrolled .topbarInner {
+  box-shadow: 0 10px 40px rgba(62, 68, 125, 0.1);
+}
+
+.topbarInner {
+  width: 100%;
+  background: rgba(14, 14, 14, 0.94);
+  padding: 20px 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topbarIn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  display: block;
+  max-height: 36px;
+}
+
+.trigger {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  span {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease;
+  }
+}
+
+.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.dropdown {
+  display: none;
+  background: rgba(14, 14, 14, 0.94);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.open {
+  display: block;
+}
+
+.closeMenu {
+  margin: 16px 0;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.dropdownInner {
+  padding-bottom: 24px;
+}
+
+.socialMenu {
+  margin-top: 20px;
+}

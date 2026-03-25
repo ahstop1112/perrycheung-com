@@ -1,0 +1,177 @@
+.portfolioPage {
+  width: 100%;
+  padding: 120px 0 100px;
+}
+
+.contentLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(320px, 0.9fr);
+  gap: 48px;
+  align-items: start;
+  margin-top: 32px;
+
+  .category{
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 5px 10px;
+    max-width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: #333333;
+  }
+}
+
+.body{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.leftImgBody {
+  min-width: 0;
+}
+
+.rightDescBody {
+  min-width: 0;
+}
+
+.topSection {
+  padding: 0;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 36px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #ffc107;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.metaLabel {
+  font-weight: 600;
+  color: #ffc107;
+}
+
+.metaValue {
+  color: #fff;
+}
+
+.linkGroup {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    color: #2563eb;
+    border-color: #2563eb;
+  }
+}
+
+.description {
+  margin-top: 28px;
+
+  p {
+    margin: 0 0 16px;
+    font-size: 0.825rem;
+    line-height: 1.8;
+    color: #fff;
+  }
+}
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 32px;
+}
+
+.hashtag {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+
+  color: #fff;
+  border: 1px solid #ffc107;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #0e0e17;
+}
+
+.notFound {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+@media (max-width: 1024px) {
+  .contentLayout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .portfolioPage {
+    padding: 56px 0 72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolioPage {
+    padding: 56px 0 72px;
+  }
+
+  .contentLayout {
+    gap: 28px;
+    margin-top: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    p {
+      font-size: 15px;
+      line-height: 1.75;
+    }
+  }
+
+  .hashtags {
+    margin-top: 24px;
+  }
+}

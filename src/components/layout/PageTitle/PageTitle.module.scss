@@ -1,0 +1,15 @@
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px; // approx theme.spacing(1.25)
+
+  @media (max-width: 960px) {
+    font-size: 1.25rem;
+    margin-left: 0;
+  }
+
+  span {
+    cursor: pointer;
+  }
+}

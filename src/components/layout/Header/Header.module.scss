@@ -1,0 +1,48 @@
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.topBarInner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 50px;
+  transition: all 0.3s ease;
+}
+
+.opened {
+  background: rgba(14, 14, 14, 0.94);
+  backdrop-filter: blur(10px);
+  padding: 20px 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  a {
+    display: inline-block;
+  }
+
+  img {
+    display: block;
+    max-height: 70px;
+    width: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .topBarInner,
+  .opened {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

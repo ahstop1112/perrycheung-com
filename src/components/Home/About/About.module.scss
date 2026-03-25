@@ -1,0 +1,151 @@
+.aboutSection {
+  padding: 120px 24px;
+  background: #0e0e17;
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/img/slider/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.3;
+    z-index: 0;
+  }
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+  gap: 64px;
+  align-items: center;
+  z-index: 2;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(17, 17, 17, 0.08);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content {
+  max-width: 720px;
+}
+
+.heading {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffc107;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.text {
+  display: grid;
+  gap: 18px;
+
+  p {
+    margin: 0;
+    font-size: 1.02rem;
+    line-height: 1.85;
+    color: #999;
+  }
+
+  strong {
+    color: #999;
+    font-weight: 600;
+  }
+}
+
+.actions {
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: #ffc107;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 28px rgba(17, 17, 17, 0.14);
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutSection {
+    padding: 88px 20px;
+  }
+
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .media {
+    justify-content: flex-start;
+  }
+
+  .imageWrapper {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 640px) {
+  .text {
+    p {
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+  }
+
+  .button {
+    width: 100%;
+  }
+}
