@@ -22,8 +22,9 @@
     align-items: center;
 }
 
-.title {
+.sectionTitle {
   margin-bottom: 28px;
+  width: 30% !important;
 
   span {
     display: inline-block;
@@ -50,7 +51,8 @@
 }
 
 .tabList{
-    width: 60% !important;
+    width: 70% !important;
+    
     button{
         color: #fff;
     }

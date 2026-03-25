@@ -54,7 +54,7 @@ const Slider = () => {
           </p>
 
           <div className={styles.actions}>
-            <a href="/#portfolio" className={styles.primaryButton}>
+            <a href="/#works" className={styles.primaryButton}>
               {t('Slider.viewWork', 'View Work')}
             </a>
             <a href="/#contact" className={styles.secondaryButton}>

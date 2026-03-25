@@ -49,7 +49,7 @@ const About = () => {
 
           <div className={styles.actions} data-aos="fade-up" data-aos-duration="1200">
             <a
-              href="/img/resume/PerryCheungResume2026.pdf"
+              href="/img/resume/PerryCheungResume20260322_core.pdf"
               download
               className={styles.button}
             >

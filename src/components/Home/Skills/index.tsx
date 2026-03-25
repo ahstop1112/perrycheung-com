@@ -12,6 +12,7 @@ const Skills = () => {
       id="skills"
       className={`${styles.parallaxBg} ${styles.skillsSection} tm_portfolio`}
     >
+      <div className={styles.inner}>
         <div className={styles.title} data-aos="fade-up" data-aos-duration="300">
           <span>{t('Skills.title')}</span>
         </div>
@@ -55,6 +56,7 @@ const Skills = () => {
               </div>
             ))}
         </div>
+      </div>
     </section>
   );
 };

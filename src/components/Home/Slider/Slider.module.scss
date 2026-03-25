@@ -1,14 +1,13 @@
 .particlesLayer {
-    height: 100%;
-    left: 0;
     position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
 
     > div {
         width: 100%;
         height: 100%;
+        pointer-events: none;
     }
 }
 
@@ -23,6 +22,7 @@
   padding: 140px 24px 100px;
   background: #0e0e17;
   max-height: 100%;
+  overflow: hidden;
 
   &::after{
     content: "";
@@ -33,7 +33,8 @@
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.15;
-    z-index: -1;
+    z-index: 0;
+    pointer-events: none;
   }
 }
 

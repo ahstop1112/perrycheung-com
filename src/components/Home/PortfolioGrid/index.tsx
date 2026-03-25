@@ -44,7 +44,7 @@ const PortfolioGrid = () => {
   return (
     <section id="portfolio" className={styles.portfolioSection}>
       <div className={styles.header}>
-        <div className={styles.title}>
+        <div className={styles.sectionTitle}>
           <span>{t('Portfolio.title')}</span>
           <h3>{t('Home.creativePortfolio')}</h3>
         </div>
