@@ -1,4 +1,4 @@
-# Perry Cheung — Portfolio Website (2026 version)
+# Perry Cheung — Portfolio Website (2026)
 
 Personal portfolio website showcasing my work as a Senior Frontend / Full Stack Engineer, with a focus on scalable UI architecture, performance, and real-world product experience.
 
