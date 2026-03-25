@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 const path = require("path");
 
 const nextConfig: NextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: { unoptimized: true },
   /* config options here */
   reactCompiler: true,
   sassOptions: {
@@ -9,7 +12,7 @@ const nextConfig: NextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
-  },
+  }
 };
 
 

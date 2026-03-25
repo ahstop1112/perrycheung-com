@@ -1,23 +1,21 @@
 "use client";
 
 import MainLayout from '@/components/layout/MainLayout';
-import PortfolioProvider from '@/providers/Portfolio';
-import { categoryListContent } from '@/data/portfolio';
 //  Child Page Components
 import List from './List';
 import Content from "./Content";
 
 type PortfolioProps = {
-    category: string;
-    year: string;
-    slug: string | ``;
+    category?: string | `all`;
+    year?: string;
+    slug?: string;
 }
 
-const Portfolio = ({ category, year, slug }: PortfolioProps) => {
-  console.log(category);
+const Portfolio = ({ category = "all", year, slug }: PortfolioProps) => {
+  console.log(category, year, slug);
   return (
     <MainLayout>
-        {category && year && slug ? <Content slug={slug} /> : <List category={category} year={year} />}
+        {category && year && slug ? <Content slug={slug} /> : <List category={category} />}
     </MainLayout>
   );
 };

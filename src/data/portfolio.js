@@ -119,10 +119,11 @@ export const categoryListContent = [{
   title: 'Sniff & Frolic Ecommerce Platform',
   slug: 'sniff-and-frolic-ecommerce',
   category: 'Ecommerce',
+  year: '2026',
   delayAnimation: '0',
   content: {
     companyName: 'Sniff & Frolic (Side Project)',
-    projectDate: '2025',
+    projectDate: '2026',
     description: [
       'Sniff & Frolic is a product-focused Ecommerce platform built for a pet lifestyle brand, combining brand storytelling with practical and user-friendly shopping experiences.',
       'The frontend is built with Next.js, focusing on reusable UI components, clear page structures, and performance-aware rendering to support both marketing content and product discovery.',
@@ -176,6 +177,7 @@ export const categoryListContent = [{
     title: 'Perry Cheung Personal Website',
     slug: 'perrycheung-corporate',
     category: 'Corporate',
+    year: '2024',
     delayAnimation: '0',
     content: {
       companyName: 'perrycheung.com',
@@ -226,6 +228,7 @@ export const categoryListContent = [{
     title: 'Simplicity Content Management System',
     slug: 'simplicity-cms-system',
     category: 'Platform',
+    year: '2024',
     delayAnimation: '0',
     content: {
       companyName: 'Radical I/O',
@@ -278,9 +281,10 @@ export const categoryListContent = [{
     slug: 'haitong-operating-system',
     category: 'Platform',
     delayAnimation: '0',
+    year: '2023',
     content: {
       companyName: 'Hatong International Securities Limited',
-      projectDate: '2022',
+      projectDate: '2023',
       description: [
         'OP+ is a Trading Operation system which is built from scratch for helping internal agents maintain client’s trading records and reduce over 70% operating time and tones of the email.',
         'Using various technologies include ReactJS (Hooks), MUI, RESTful API Integration, Unit Testing (JEST, Enzyme), Jenkins, GIT',
@@ -323,10 +327,11 @@ export const categoryListContent = [{
     title: 'Haitong Securities International Corporate Website',
     slug: 'haitong-securities-corporate-website',
     category: 'Corporate',
+    year: '2023',
     delayAnimation: '100',
     content: {
       companyName: 'Hatong International Securities Limited',
-      projectDate: '2022',
+      projectDate: '2023',
       description: [
         'Helping content update, style fine tune and adding SEO on existing Haitong Corporate Website.',
         'Using various technologies include ReactJS (Hooks), TypeScript, MUI, RESTful API Integration, Jenkins, GIT',
@@ -348,7 +353,10 @@ export const categoryListContent = [{
         }
       ],
       links: [],
-      liveLinks: ['http://htisec.com'],
+      liveLinks: [{
+        title: "Coprorate site",
+        url: 'http://htisec.com'
+      }],
       gitLink: [],
     },
   },
@@ -357,10 +365,11 @@ export const categoryListContent = [{
     title: 'Serai B2B platform',
     slug: 'serai-b2b-platform',
     category: 'Platform',
+    year: '2021',
     delayAnimation: '100',
     content: {
       companyName: 'Serai Limited (HSBC Group, closed at 2022)',
-      projectDate: '2020',
+      projectDate: '2021',
       description: [
         'Serai B2B platform is a social sharing application like Facebook for allowing suppliers to register and share their company information with each other',
         'Using various technologies include ReactJS, Redux, MUI, NodeJS (Express), RESTful API Integration, Unit Testing (JEST, Enzyme, Cypress), GIT, AWS (EC2 / S3)',
@@ -413,6 +422,7 @@ export const categoryListContent = [{
     title: 'IPMS Property Management platform',
     slug: 'ipms-property-managment-platform',
     category: 'Platform',
+    year: '2022',
     delayAnimation: '100',
     content: {
       companyName: 'IPMS (Freelance)',
@@ -448,6 +458,7 @@ export const categoryListContent = [{
     title: 'Fayfay.com Content Management platform',
     slug: 'fayfay-content-management-platform',
     category: 'Platform',
+    year: '2019',
     delayAnimation: '100',
     content: {
       companyName: 'Fayfay.com Limited (Closed)',
@@ -494,6 +505,7 @@ export const categoryListContent = [{
     title: 'Fayfay.com Travel Experiences Ecommerce Website',
     slug: 'fayfay-ecommerce-website',
     category: 'Ecommerce',
+    year: '2019',
     delayAnimation: '100',
     content: {
       companyName: 'Fayfay.com Limited (Closed)',
@@ -531,6 +543,7 @@ export const categoryListContent = [{
     title: 'Prada Totem IPad Game for reatil store promotion',
     slug: 'prada-totem-game',
     category: 'Campaign',
+    year: '2021',
     delayAnimation: '100',
     content: {
       companyName: 'Prada (Freelance)',
@@ -565,6 +578,7 @@ export const categoryListContent = [{
     title: 'Esteen Lauder Ecommerce Website',
     slug: 'esteen-lauder-ecommerce-website',
     category: 'Ecommerce',
+    year: '2015',
     delayAnimation: '100',
     content: {
       companyName: 'Esteen Lauder (Isobar Hong Kong)',
@@ -599,6 +613,7 @@ export const categoryListContent = [{
     title: 'Audi "Progressive. Like Audi like You"',
     slug: 'audi-progressive-like-you-campaign',
     category: 'Campaign',
+    year: '2014',
     delayAnimation: '100',
     content: {
       companyName: 'Audi (Isobar Hong Kong)',
@@ -641,6 +656,7 @@ export const categoryListContent = [{
     title: 'Uniqlo 10 years Re-Jean DIY Workshop Campaign',
     slug: 'uniqlo-re-jean-campaign',
     category: 'Campaign',
+    year: '2015',
     delayAnimation: '100',
     content: {
       companyName: 'Uniqlo (Isobar Hong Kong)',
@@ -692,6 +708,7 @@ export const categoryListContent = [{
     title: 'Uniqlo AIRism Campaign',
     slug: 'uniqlo-air-ism-campaign',
     category: 'Campaign',
+    year: '2015',
     delayAnimation: '100',
     content: {
       companyName: 'Uniqlo (Isobar Hong Kong)',
@@ -731,6 +748,7 @@ export const categoryListContent = [{
     title: 'The Penisula (Hong Kong) Corporate Website',
     slug: 'the-penisula-corporate-website',
     category: 'Corporate',
+    year: '2015',
     delayAnimation: '100',
     content: {
       companyName: 'The Penisula Hotels (Isobar Hong Kong)',
@@ -770,6 +788,7 @@ export const categoryListContent = [{
     title: 'Hong Kong Jockey Club - Beijing Clubhouse Corporate Website',
     slug: 'hkjc-beijing-clubhouse-corporate-website',
     category: 'Corporate',
+    year: '2018',
     delayAnimation: '100',
     content: {
       companyName: 'Hong Kong Jockey Club',
@@ -809,6 +828,7 @@ export const categoryListContent = [{
     title: 'Hong Kong Jockey Club Corporate Website',
     slug: 'hkjc-corporate-website',
     category: 'Corporate',
+    year: '2018',
     delayAnimation: '100',
     content: {
       companyName: 'Hong Kong Jockey Club',
@@ -857,6 +877,7 @@ export const categoryListContent = [{
     title: 'Hong Kong Jockey Club Membership Exclusive Shopping Ecommerce Website',
     slug: 'hkjc-membership-exclusive-ecommerce-website',
     category: 'Ecommerce',
+    year: '2018',
     delayAnimation: '100',
     content: {
       companyName: 'Hong Kong Jockey Club',
@@ -897,6 +918,7 @@ export const categoryListContent = [{
     title: 'LIGHTLINKS Corporate Website',
     slug: 'lightlinks-interior-design-house',
     category: 'Corporate',
+    year: '2018',
     delayAnimation: '100',
     content: {
       companyName: 'LIGHTLINKS International Limited (Freelance)',
@@ -977,6 +999,7 @@ export const categoryListContent = [{
     title: 'HomeoBeau Ecommerce Website',
     slug: 'homeobeau-ecommerce-website',
     category: 'Ecommerce',
+    year: '2018',
     delayAnimation: '100',
     content: {
       companyName: 'HomeoBeau (Freelance)',
@@ -1016,6 +1039,7 @@ export const categoryListContent = [{
     title: 'Future Animation',
     slug: 'future-animation-wordpress',
     category: 'Wordpress',
+    year: '2024',
     delayAnimation: '0',
     content: {
       companyName: 'Freelance',
@@ -1067,6 +1091,7 @@ export const categoryListContent = [{
     title: 'Go Illustratror',
     slug: 'go-illustrator-wordpress',
     category: 'Wordpress',
+    year: '2024',
     delayAnimation: '0',
     content: {
       companyName: 'Freelance',
@@ -1118,6 +1143,7 @@ export const categoryListContent = [{
     title: 'THE FIRST HONG KONG FILM MUSIC FIESTA',
     slug: 'hkfmf-wordpress',
     category: 'Wordpress',
+    year: '2024',
     delayAnimation: '0',
     content: {
       companyName: 'Freelance',

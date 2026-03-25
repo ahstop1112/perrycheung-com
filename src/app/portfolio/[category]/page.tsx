@@ -1,19 +1,24 @@
 import Portfolio from "@/components/Portfolio";
+import { categoryListContent } from '@/data/portfolio';
 
-type PortfolioDetailPageProps = {
+export const generateStaticParams = () => {
+  return categoryListContent.map((item) => ({
+    category: item.category.toLowerCase()
+  }));
+};
+
+type PortfolioCategoryPageProps = {
   params: Promise<{
     category: string;
-    slug: string;
-    year: string;
   }>;
 };
 
-const PortfolioDetailPage = async ({ params }: PortfolioDetailPageProps) => {
-  const { category, year, slug } = await params;
+const PortfolioCategoryPage = async ({ params }: PortfolioCategoryPageProps) => {
+  const { category } = await params;
 
   return (
-    <Portfolio category={category} year={year} slug={slug}/>
+    <Portfolio category={category} />
   );
 };
 
-export default PortfolioDetailPage;
+export default PortfolioCategoryPage;

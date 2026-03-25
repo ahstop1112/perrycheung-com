@@ -60,6 +60,7 @@ const List = ({ category }: ListProps) => {
 
     const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
         setCurrentTag(newValue);
+        console.log(newValue);
         router.push(`/portfolio/${tagList[newValue].toLowerCase()}`);
     };
 
