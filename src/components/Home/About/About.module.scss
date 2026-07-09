@@ -34,7 +34,6 @@
 
 .imageWrapper {
   width: 100%;
-  max-width: 380px;
   border-radius: 28px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(17, 17, 17, 0.08);
@@ -130,10 +129,6 @@
 
   .media {
     justify-content: flex-start;
-  }
-
-  .imageWrapper {
-    max-width: 320px;
   }
 }
 

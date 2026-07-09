@@ -5,10 +5,12 @@ import Particles from 'react-tsparticles';
 import type { Engine, ISourceOptions } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
 import { ParticlesConfig } from "@/utility/particle.config";
+// import { useGeo } from '@/providers/Geo';
 import styles from './Slider.module.scss';
 
 const Slider = () => {
   const { t } = useTranslation();
+  // const { country } = useGeo();
 
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
@@ -28,11 +30,13 @@ const Slider = () => {
       'Engineered real-time trading and operations systems for high-volume data environments'
       )
   ]
+
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
   
   return (
     <section id="home" className={styles.sliderSection}>
       <div className={styles.particlesLayer}>
-        <Particles id="particles" init={particlesInit} options={ParticlesConfig} />
+        {!isMobile ? <Particles id="particles" init={particlesInit} options={ParticlesConfig} /> : null}
       </div>
       <div className={styles.inner}>
         <div className={styles.content}>
@@ -110,7 +114,7 @@ const Slider = () => {
                 React · Next.js · TypeScript · Node.js
               </p>
               <p className={styles.metaFooter}>
-                Vancouver · Open to work
+                Hong Kong · Open to work
               </p>
             </div>
           </div>

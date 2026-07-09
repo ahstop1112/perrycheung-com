@@ -75,28 +75,48 @@
   font-family: "Poppins", sans-serif;
 }
 
-.core{
-    .label {
-        font-size: 0.875rem !important;
-        font-weight: 700;
-    }
+.coreStack{
     .skillsImage{
         flex: 0 0 20% !important;
-    }
-    .logo{
-        max-width: 50px !important;
+
+        @media screen and (max-width: 767px) {
+          flex: 0 0 50% !important;
+        }
     }
 }
 
 .frontend{
-    .label {
-        font-size: 0.875rem !important;
-        font-weight: 700;
-    }
     .skillsImage{
         flex: 0 0 33.333% !important;
+         @media screen and (max-width: 767px) {
+          flex: 0 0 100% !important;
+        }
     }
-    .logo{
-        max-width: 50px !important;
+}
+
+.backend{
+    .skillsImage{
+        flex: 0 0 33.333% !important;
+         @media screen and (max-width: 767px) {
+          flex: 0 0 50% !important;
+        }
+    }
+}
+
+.version{
+    .skillsImage{
+        flex: 0 0 33.333% !important;
+         @media screen and (max-width: 767px) {
+          flex: 0 0 50% !important;
+        }
+    }
+}
+
+.database{
+    .skillsImage{
+        flex: 0 0 33.333% !important;
+         @media screen and (max-width: 767px) {
+          flex: 0 0 50% !important;
+        }
     }
 }

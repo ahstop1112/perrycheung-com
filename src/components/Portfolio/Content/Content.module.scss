@@ -145,15 +145,11 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-
-  .portfolioPage {
-    padding: 56px 0 72px;
-  }
 }
 
 @media (max-width: 767px) {
   .portfolioPage {
-    padding: 56px 0 72px;
+    padding: 30px 30px 72px 30px;
   }
 
   .contentLayout {

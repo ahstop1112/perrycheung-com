@@ -2,6 +2,10 @@
   width: 100%;
   padding: 120px 0 100px;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 30px 30px 72px 30px;
+  }
 }
 
 .container {
@@ -18,23 +22,33 @@
 }
 
 .tabList{
-    button{
-        color: #fff;
-    }
+  width: 100%;
+  position: relative;
+  z-index: 10;
 
-    button:hover {
-        color: #ffc107 !important;
-    }
+  @media screen and (max-width: 767px) {
+    display: none !important; // temporary hide tabs on mobile, can be replaced with a dropdown if needed
+    max-width: 100%;
+    overflow: auto !important;
+  }
+  
+  button{
+    color: #fff;
+  }
 
-    button.Mui-selected {
-        color: #ffc107 !important;
-        border-bottom-color: #ffc107 !important;
-    }
-    
-    .MuiTabs-indicator {
-        background-color: #ffc107;
-        height: 2px;
-    }
+  button:hover {
+      color: #ffc107 !important;
+  }
+
+  button.Mui-selected {
+      color: #ffc107 !important;
+      border-bottom-color: #ffc107 !important;
+  }
+  
+  .MuiTabs-indicator {
+      background-color: #ffc107;
+      height: 2px;
+  }
 }
 
 .portfolioList {
@@ -101,6 +115,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+  }
 }
 
 .card {

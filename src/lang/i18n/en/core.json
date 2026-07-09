@@ -22,8 +22,30 @@
     "perryCheung": "Perry Cheung",
     "frontendDeveloper": "Senior Frontend Engineer",
     "fullStackDeveloper": "Product & UX Engineering",
-    "baseIn": "based in Vancouver, CA",
-    "seePort": "SEE PORTFOLIO"
+    "baseInCA": "based in Vancouver, CA",
+    "baseInHK": "based in Hong Kong",
+    "seePort": "SEE PORTFOLIO",
+    "eyebrow": "Senior Frontend Engineer",
+
+    "titleLine1": "I build scalable frontend systems",
+    "titleLine2": "for high-performance, data-driven products",
+
+    "description": "I design and build frontend systems that stay stable under real-world complexity, from POS environments to high-frequency trading workflows.",
+
+    "viewWork": "View Work",
+    "contactMe": "Contact Me",
+
+    "highlightOne": "Designed end-to-end POS workflows bridging online ordering and in-store operations",
+    "highlightTwo": "Built headless CMS platforms powering flexible, scalable content experiences",
+    "highlightThree": "Engineered real-time trading and operations systems for high-volume data environments",
+
+    "cardEyebrow": "At a glance",
+
+    "statOne": "Years building production systems",
+    "statTwo": "Enterprise trading platforms",
+    "statThree": "Records handled with zero UI lag",
+
+    "stackTitle": "Core Stack"
   },
   "About": {
     "title": "About Me",
@@ -31,6 +53,7 @@
     "introContent": "I’m a Senior Frontend Engineer with 10+ years of experience building and scaling real-world products, from POS systems to trading platforms.",
     "introContent2": "I focus on turning complex systems into clean, maintainable interfaces that can handle real operational demands. My work sits at the intersection of engineering, product, and user experience.",
     "introContent3": "Based in Vancouver, I’m looking for long-term opportunities where I can contribute to building stable, high-impact systems.",
+    "introContent4": "Based in Hong Kong, I’m looking for long-term opportunities where I can contribute to building stable, high-impact systems.",
     "downloadCV": "Download CV"
   },
   "Skills": {

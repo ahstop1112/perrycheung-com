@@ -29,7 +29,7 @@ const Skills = () => {
                 data-aos="fade-right"
                 data-aos-duration="1200"
                 data-aos-delay={item.delayAnimation}
-                className={item.title === "coreStack" ? styles.core : item.title === "frontendDev" ? styles.frontend : ``}
+                className={styles[item.class]}
               >
                 <h5>{t(`Skills.${item.title}`)}</h5>
 

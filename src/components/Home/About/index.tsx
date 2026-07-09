@@ -6,6 +6,11 @@ import styles from './About.module.scss';
 const About = () => {
   const { t } = useTranslation();
 
+  const cvLink = "/img/resume/PerryCheungResume_HK.pdf";
+  // !isHK
+    // ? "/img/resume/PerryCheungResume_CA.pdf"  // 👈 CA
+    // : "/img/resume/PerryCheungResume_HK.pdf"; // 👈 HK
+// 
   return (
     <section id="about" className={styles.aboutSection}>
       <div className={styles.inner}>
@@ -40,16 +45,23 @@ const About = () => {
             </p>
 
             <p>
-              <Trans
-                i18nKey="About.introContent3"
-                components={{ strong: <strong /> }}
-              />
+              {/* {isHK ? ( */}
+                <Trans
+                  i18nKey="About.introContent4"
+                  components={{ strong: <strong /> }}
+                />
+              {/* ) : (
+                <Trans
+                  i18nKey="About.introContent3"
+                  components={{ strong: <strong /> }}
+                />
+              )} */}
             </p>
           </div>
 
           <div className={styles.actions} data-aos="fade-up" data-aos-duration="1200">
             <a
-              href="/img/resume/PerryCheungResume20260322_core.pdf"
+              href={cvLink}
               download
               className={styles.button}
             >

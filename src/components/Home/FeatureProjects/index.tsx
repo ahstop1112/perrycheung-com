@@ -8,23 +8,23 @@ const FeatureProjects = () => {
 
   const projects = [
     {
-      title: 'Enterprise POS System Refactor',
-      subtitle: 'TechPOS',
+      title: 'Trading Platform Form Engine',
+      subtitle: 'Haitong International',
       description:
-        'Led the frontend refactor of a large-scale enterprise POS system, simplifying an overgrown Redux architecture while improving maintainability and supporting ongoing feature delivery.',
+        'Architected a JSON schema-driven form engine adopted across 5+ institutional trading platforms, replacing hand-coded forms with a configurable system while leading a team of four engineers.',
       meta: [
-        'Senior Frontend / Full-Stack Developer',
-        'React, Architecture Refactor, Data Visualization',
+        'Lead Frontend Engineer / UX Architect',
+        'React, TypeScript, JSON Schema, Design System',
       ],
     },
     {
-      title: 'Next.js E-commerce Platform',
-      subtitle: 'Sniff & Frolic Pet Store',
+      title: 'Commerce & POS Platform',
+      subtitle: 'Sniff & Frolic — Pet Industry',
       description:
-        'Designed and built a Next.js-based e-commerce platform with a focus on frontend architecture, product presentation, and performance for a small product-focused brand.',
+        'Built an end-to-end commerce and point-of-sale platform from scratch for a Pet brand I founded — storefront, checkout, inventory, and in-person market sales — architected as a Next.js and NestJS monorepo on PostgreSQL, running in production.',
       meta: [
-        'Product-focused Full-Stack Developer',
-        'Next.js, E-commerce, UX-driven Development',
+        'Founder / Full-Stack Engineer',
+        'Next.js, NestJS, PostgreSQL, Monorepo',
       ],
     },
     {
@@ -33,8 +33,8 @@ const FeatureProjects = () => {
       description:
         'Built and maintained CMS-driven websites and internal tools, balancing editor flexibility, usability, and long-term maintainability across content-heavy projects.',
       meta: [
-        'Frontend / Full-Stack Developer',
-        'CMS Architecture, Content-driven UI, Complex Forms',
+        'Frontend / Full-Stack Engineer',
+        'CMS Architecture, Content-driven UI, Complex Forms width drag & drop',
       ],
     },
   ];

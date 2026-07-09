@@ -1,10 +1,13 @@
 'use client';
 
 import { useTranslation } from 'react-i18next';
+// import { useGeo } from '@/providers/Geo';
 import styles from './CallToAction.module.scss';
+
 
 const CallToAction = () => {
   const { t } = useTranslation();
+  // const { country } = useGeo();
 
   return (
     <section id="contact" className={styles.contactSection}>
@@ -36,7 +39,9 @@ const CallToAction = () => {
             <span className={styles.label}>
               {t('CallToAction.locationLabel', 'Location')}
             </span>
-            <p className={styles.value}>Vancouver, BC, Canada</p>
+            <p className={styles.value}>Hong Kong
+              {/* {country === 'HK' ? 'Hong Kong' : 'Vancouver, BC, Canada'} */}
+            </p>
           </div>
 
           <div className={styles.item}>

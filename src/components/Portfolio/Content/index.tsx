@@ -2,8 +2,6 @@
 
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 import { categoryListContent } from "@/data/portfolio";
 import ContentHeader from './ContentHeader';

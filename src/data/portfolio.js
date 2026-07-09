@@ -1,6 +1,7 @@
 export const skillTypeData = [
   {
     title: 'coreStack',
+    class: 'coreStack',
     content: 'frontendContent',
     delayAnimation: 0,
     images: [
@@ -36,6 +37,7 @@ export const skillTypeData = [
   },
   {
     title: 'frontendDev',
+    class: 'frontend',
     content: 'frontendContent',
     delayAnimation: 0,
     images: [
@@ -53,6 +55,7 @@ export const skillTypeData = [
 
   {
     title: 'backendDev',
+    class: 'backend',
     content: 'backendDevContent',
     delayAnimation: 50,
     images: [
@@ -64,6 +67,7 @@ export const skillTypeData = [
   },
   {
     title: 'databaseDev',
+    class: 'database',
     content: 'databaseDevContent',
     delayAnimation: 50,
     images: [
@@ -76,6 +80,7 @@ export const skillTypeData = [
   },
   {
     title: 'versionControl',
+    class: 'version',
     content: 'versionControlContent',
     delayAnimation: 200,
     images: [
@@ -115,6 +120,67 @@ export const tagList = ['All', 'Platform', 'Ecommerce', 'Corporate', 'Campaign',
 export const heights = [150, 30, 90, 70, 110, 150, 130, 80, 50, 90, 100, 150, 30, 50, 80];
 
 export const categoryListContent = [{
+  img: 'sniff-frolic-pos.jpg',
+  title: 'Sniff & Frolic POS System',
+  slug: 'sniff-and-frolic-pos',
+  category: 'Platform',
+  year: '2026',
+  delayAnimation: '0',
+  content: {
+    companyName: 'Sniff & Frolic',
+    projectDate: '2026',
+    description: [
+      'An in-progress point-of-sale system built for a Pet Lifestyle brand, designed to handle in-person market sales alongside the existing Ecommerce storefront.',
+      'Architected as a Next.js and NestJS monorepo backed by PostgreSQL, separating the transactional API layer from the operator-facing interface.',
+      'The frontend prioritises fast, low-friction interactions for a market stall context — minimal taps per transaction, resilient to intermittent connectivity.',
+      'Currently under active development. Source code is available for review; a public demo is planned once the core checkout flow is complete.',
+    ],
+    hashtags: [
+      'Next.js',
+      'NestJS',
+      'PostgreSQL',
+      'Monorepo',
+      'Full-Stack',
+      'System Design',
+      'TypeScript',
+    ],
+    imgItems: [
+      {
+        img: 'sniff-frolic-pos-inventory.jpg',
+        title: 'Inventory Interface',
+        category: 'Sniff & Frolic POS',
+        imgLink: '',
+        delayAnimation: '0',
+      }, {
+        img: 'sniff-frolic-pos-members.jpg',
+        title: 'Members Interface',
+        category: 'Sniff & Frolic POS',
+        imgLink: '',
+        delayAnimation: '0',
+      }, {
+        img: 'sniff-frolic-pos-store-dashboard.jpg',
+        title: 'Store Manager Dashboard Interface',
+        category: 'Sniff & Frolic POS',
+        imgLink: '',
+        delayAnimation: '0',
+      }, {
+        img: 'sniff-frolic-pos-report.jpg',
+        title: 'Report Interface',
+        category: 'Sniff & Frolic POS',
+        imgLink: '',
+        delayAnimation: '0',
+      },
+    ],
+    links: [],
+    liveLinks: [],
+    gitLink: [
+      {
+        title: 'Source Code',
+        url: 'https://github.com/ahstop1112/sniff-n-frolic-pos',   // ← 換成你真實 repo
+      },
+    ],
+  }
+},{
   img: 'sniff-frolic-home.jpg',
   title: 'Sniff & Frolic Ecommerce Platform',
   slug: 'sniff-and-frolic-ecommerce',
@@ -157,11 +223,11 @@ export const categoryListContent = [{
         delayAnimation: '0',
       }
     ],
-    links: ['https://app.sniffnfrolic.com/'],
+    links: ['https://sniffnfrolic.com/'],
     liveLinks: [
       {
         title: 'Sniff & Frolic',
-        url: 'https://app.sniffnfrolic.com/',
+        url: 'https://sniffnfrolic.com/',
       }
     ],
     gitLink: [
@@ -171,57 +237,6 @@ export const categoryListContent = [{
       }
     ],
   },
-  },
-  {
-    img: 'perrycheung-corporate.jpg',
-    title: 'Perry Cheung Personal Website',
-    slug: 'perrycheung-corporate',
-    category: 'Corporate',
-    year: '2024',
-    delayAnimation: '0',
-    content: {
-      companyName: 'perrycheung.com',
-      projectDate: '2024',
-      description: [
-        'PerryCheung.com is my personal portfolio website which is showing my portfolio and the details of each project.',
-        'Using various technologies include ReactJS (Hooks), MUI, GIT',
-      ],
-      hashtags: [
-        'Coding Architecture',
-        'Single Page Application',
-        'ReactJS',
-        'MUI',
-        'Javascript ES6+',
-        'Github',
-      ],
-      imgItems: [
-        {
-          img: 'perrycheung-corporate.jpg',
-          title: 'PerryCheung.com',
-          category: 'PerryCheung.com',
-          imgLink: '',
-          delayAnimation: '0',
-        },{
-          img: 'perrycheung-corporate-2.jpg',
-          title: 'PerryCheung.com Portfolio',
-          category: 'PerryCheung.com Portfolio',
-          imgLink: '',
-          delayAnimation: '0',
-        }
-      ],
-      links: ['https://www.perrycheung.com/'],
-      liveLinks: [{
-        title: 'PerryCheung.com',
-        url: 'https://www.perrycheung.com/',
-      },{
-        title: 'PerryCheung.com Portfolio',
-        url: 'https://www.perrycheung.com/portfolio',
-      }],
-      gitLink: [{
-        title: 'Source Code',
-        url: 'https://github.com/ahstop1112/perrycheung.com/',
-      }],
-    },
   },
   {
     img: 'simplicity-cms-system.jpg',
@@ -415,6 +430,58 @@ export const categoryListContent = [{
         }
       ],
       gitLink: '',
+    },
+  },
+
+  {
+    img: 'perrycheung-corporate.jpg',
+    title: 'Perry Cheung Personal Website',
+    slug: 'perrycheung-corporate',
+    category: 'Corporate',
+    year: '2024',
+    delayAnimation: '0',
+    content: {
+      companyName: 'perrycheung.com',
+      projectDate: '2024',
+      description: [
+        'PerryCheung.com is my personal portfolio website which is showing my portfolio and the details of each project.',
+        'Using various technologies include ReactJS (Hooks), MUI, GIT',
+      ],
+      hashtags: [
+        'Coding Architecture',
+        'Single Page Application',
+        'ReactJS',
+        'MUI',
+        'Javascript ES6+',
+        'Github',
+      ],
+      imgItems: [
+        {
+          img: 'perrycheung-corporate.jpg',
+          title: 'PerryCheung.com',
+          category: 'PerryCheung.com',
+          imgLink: '',
+          delayAnimation: '0',
+        },{
+          img: 'perrycheung-corporate-2.jpg',
+          title: 'PerryCheung.com Portfolio',
+          category: 'PerryCheung.com Portfolio',
+          imgLink: '',
+          delayAnimation: '0',
+        }
+      ],
+      links: ['https://www.perrycheung.com/'],
+      liveLinks: [{
+        title: 'PerryCheung.com',
+        url: 'https://www.perrycheung.com/',
+      },{
+        title: 'PerryCheung.com Portfolio',
+        url: 'https://www.perrycheung.com/portfolio',
+      }],
+      gitLink: [{
+        title: 'Source Code',
+        url: 'https://github.com/ahstop1112/perrycheung.com/',
+      }],
     },
   },
   {

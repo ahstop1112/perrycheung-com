@@ -1,9 +1,9 @@
 "use client";
 
 import Slider from "react-slick";
-import styles from './Gallery.module.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import styles from './Gallery.module.scss';
 
 type ImgItem = {
   img: string;
@@ -25,6 +25,10 @@ const Gallery = ({ category, imgItems }: GalleryProps) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
+    swipe: true,
+    swipeToSlide: true,
+    touchMove: true,
+    draggable: true,
   };
 
   if (!imgItems || imgItems.length === 0) {
@@ -32,17 +36,21 @@ const Gallery = ({ category, imgItems }: GalleryProps) => {
   }
 
   return (
-      <Slider {...settings} className={styles.slider}>
+    <div className={styles.container}>
+      <Slider {...settings}   swipeToSlide
+  afterChange={(index) => console.log(index)}>
         {imgItems.map((item) => (
           <div key={item.img} className={styles.item}>
             <img
               src={`/img/portfolio/${category.toLowerCase()}/${item.img}`}
               className={styles.image}
               alt={item.title || ''}
+              draggable={false}
             />
           </div>
         ))}
       </Slider>
+    </div>
   );
 };
 

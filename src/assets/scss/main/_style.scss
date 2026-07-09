@@ -1257,7 +1257,7 @@ ul.react-tabs__tab-list {
       font-weight: 500;
       color: $white;
 
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         flex: 0 0 31.33%;
         margin-right: 2%;
       }
@@ -2046,7 +2046,6 @@ body.modal {
   text-align: center;
 }
 .tm_copyright p {
-  font-family: 'Poppins';
   color: $white;
 }
 .tm_copyright a {
@@ -3161,7 +3160,7 @@ body.intro .loader_line:after {
 }
 .btn-medium {
   padding: 12px 41px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding: 8px 25px;
   }
 }
@@ -3275,7 +3274,7 @@ body.intro .loader_line:after {
   z-index: 1;
   top: 0;
   left: 0;
-  // @media screen and (max-width: 768px) {
+  // @media screen and (max-width: 767px) {
   //   display: none;
   // }
   > div {
@@ -3322,7 +3321,7 @@ body.intro .loader_line:after {
     font-family: 'Montserrat';
     line-height: 1;
     letter-spacing: 5px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 80px;
     }
   }
@@ -3336,7 +3335,7 @@ body.intro .loader_line:after {
     p {
       color: $black;
       padding-bottom: 45px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         padding-bottom: 30px;
         font-size: 1rem;
         padding-top: 20px;

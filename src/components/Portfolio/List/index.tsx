@@ -3,7 +3,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Tabs, Tab } from "@mui/material";
 import { useRouter } from "next/navigation";
-import AOS from "aos";
 import "yet-another-react-lightbox/styles.css";
 import { tagList, categoryListContent } from "@/data/portfolio";
 import ListHeader from "./Header";
@@ -36,6 +35,7 @@ const TabPanel = ({ children, value, index }: TabPanelProps) => {
 const List = ({ category }: ListProps) => {
     const router = useRouter();
     const [open, setOpen] = useState(false);
+    const [lightboxIndex, setLightboxIndex] = useState(-1);
 
     const tagIndex = tagList.findIndex(
         (item) => item.toLowerCase() === category?.toLowerCase()
@@ -60,12 +60,12 @@ const List = ({ category }: ListProps) => {
 
     const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
         setCurrentTag(newValue);
-        console.log(newValue);
+        setLightboxIndex(-1);
         router.push(`/portfolio/${tagList[newValue].toLowerCase()}`);
     };
+    
 
     useEffect(() => {
-        AOS.init();
         window.scrollTo(0, 0);
     }, []);
 
@@ -76,16 +76,30 @@ const List = ({ category }: ListProps) => {
     }, [tagIndex]);
 
   return (
-        <section className={`${styles.portfolioListSection}`}>
+      <section className={`${styles.portfolioListSection}`}>
+          <div className={styles.inner}>
             <ListHeader />
             <div className={styles.container}>
                 <div className={styles.positionRelative}>
                 <div className={styles.portfolioFilter}>
-                    <Tabs className={styles.tabList} value={currentTag} onChange={handleChange} aria-label="portfolio tabs">
+                    <Tabs 
+                        className={styles.tabList} value={currentTag} onChange={handleChange} aria-label="portfolio tabs" 
+                        variant="scrollable" scrollButtons={false}
+                        sx={{
+                            '& .MuiTabs-scroller': {
+                            overflowX: 'auto !important',
+                            },
+                            '& .MuiTab-root': {
+                            minWidth: 'auto',
+                            whiteSpace: 'nowrap',
+                            },
+                        }}
+                    >
                         {tagList.map((val, i) => (
                         <Tab
                             key={val}
                             label={val}
+                            value={i}
                             id={`portfolio-tab-${i}`}
                             aria-controls={`portfolio-tabpanel-${i}`}
                         />
@@ -102,6 +116,7 @@ const List = ({ category }: ListProps) => {
                                     )
                                     .map((item) => (
                                     <li key={item.slug} className={styles.card}>
+
                                         <div
                                         className={styles.imageWrap}
                                         onClick={() =>
@@ -137,6 +152,8 @@ const List = ({ category }: ListProps) => {
                 src: `/img/.../${item.img}`
             }))}
         /> */}
+              
+          </div>
         </section >
   );
 };

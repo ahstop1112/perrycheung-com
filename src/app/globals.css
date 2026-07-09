@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 767px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
